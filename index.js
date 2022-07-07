@@ -12,6 +12,4 @@ app.get("/teste", (req, res)=>{
     res.json({message:"TESTE SUCESSO!"});
 });
 
-app.listen(3000,()=>{
-    console.log("Servidor startado com sucesso!")
-});
+app.listen(3000);
