@@ -12,6 +12,4 @@ app.get("/teste", (req, res)=>{
     res.json({message:"TESTE SUCESSO!"});
 });
 
-app.listen(3000, () => {
-    Console.log("Servidor rodando na porta 3000");
-});
+app.listen(3000);
