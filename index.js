@@ -11,7 +11,7 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/tray/callback", (req, res)=>{
-    res.json({message: JSON.stringify(req)});
+    res.send(JSON.stringify(req.body));
 });
 
 app.listen(3000,()=>{
