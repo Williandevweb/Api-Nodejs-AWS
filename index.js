@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 //const cors = require("cors");
 
+app.use(express.json())
+
 //app.use(cors());
 
 app.get("/", (req, res)=>{
@@ -9,7 +11,7 @@ app.get("/", (req, res)=>{
 })
 
 app.get("/tray/callback", (req, res)=>{
-    res.json({message:"SUCESSO!"});
+    res.json({message: req});
 });
 
 app.listen(3000,()=>{
