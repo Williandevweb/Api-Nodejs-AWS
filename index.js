@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.use(cors());
 
-app.get("/tray/callback", (req, res)=>{
+app.get("/", (req, res)=>{
   res.sendFile(__dirname + '/index.html')
 })
 
