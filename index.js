@@ -11,7 +11,7 @@ app.use(express.json())
 //})
 
 app.get("/tray/callback", (req, res)=>{
-    //res.send(JSON.stringify(req.params));
+    res.send(JSON.stringify(req.query));
 });
 
 app.listen(3000,()=>{
