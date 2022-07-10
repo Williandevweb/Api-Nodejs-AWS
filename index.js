@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors());
 
 app.get("/", (req, res)=>{
-    res.send(JSON.stringify(req.params));
+    //res.send(JSON.stringify(req.params));
 });
 
 //app.get("/", (req, res)=>{
