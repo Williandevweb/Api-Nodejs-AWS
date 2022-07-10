@@ -6,7 +6,7 @@ app.use(express.json())
 
 app.use(cors());
 
-app.get("/tray/callback/auth/", (req, res)=>{
+app.get("/", (req, res)=>{
     res.send(JSON.stringify(req.params));
 });
 
