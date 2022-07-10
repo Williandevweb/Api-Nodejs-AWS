@@ -10,7 +10,7 @@ app.use(cors());
   //res.sendFile(__dirname + '/index.html')
 //})
 
-app.get("/tray/callback/auth", (req, res)=>{
+app.get("/", (req, res)=>{
     res.send(JSON.stringify(req.query));
 });
 
