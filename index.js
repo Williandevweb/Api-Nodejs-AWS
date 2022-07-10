@@ -6,12 +6,12 @@ app.use(express.json())
 
 //app.use(cors());
 
-app.get("/", (req, res)=>{
-    res.sendFile(__dirname + '/index.html')
-})
+//app.get("/", (req, res)=>{
+//    res.sendFile(__dirname + '/index.html')
+//})
 
 app.get("/tray/callback", (req, res)=>{
-    res.send(JSON.stringify(req.params));
+    //res.send(JSON.stringify(req.params));
 });
 
 app.listen(3000,()=>{
