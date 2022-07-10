@@ -10,7 +10,7 @@ app.use(cors());
 //    res.send(JSON.stringify(req.params));
 //});
 
-app.get("/", (req, res)=>{
+app.get("/tray/callback/", (req, res)=>{
   res.sendFile(__dirname + '/index.html')
 })
 
