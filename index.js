@@ -10,7 +10,7 @@ app.use(cors());
   //res.sendFile(__dirname + '/index.html')
 //})
 
-app.get("/", (req, res)=>{
+app.get("/tray", (req, res)=>{
     res.send(JSON.stringify(req.query));
 });
 
