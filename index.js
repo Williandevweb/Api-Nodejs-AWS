@@ -6,11 +6,11 @@ app.use(express.json())
 
 app.use(cors());
 
-//app.get("/", (req, res)=>{
-  //res.sendFile(__dirname + '/index.html')
-//})
+app.get("/", (req, res)=>{
+  res.sendFile(__dirname + '/index.html')
+})
 
-app.get("/tray", (req, res)=>{
+app.get("/", (req, res)=>{
     res.send(JSON.stringify(req.query));
 });
 
