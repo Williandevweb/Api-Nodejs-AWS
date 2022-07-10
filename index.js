@@ -1,14 +1,14 @@
 const express = require("express");
 const app = express();
-//const cors = require("cors");
+const cors = require("cors");
 
 app.use(express.json())
 
-//app.use(cors());
+app.use(cors());
 
-//app.get("/", (req, res)=>{
-//    res.sendFile(__dirname + '/index.html')
-//})
+app.get("/", (req, res)=>{
+    res.sendFile(__dirname + '/index.html')
+})
 
 app.get("/tray/callback", (req, res)=>{
     res.send(JSON.stringify(req.query));
