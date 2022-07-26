@@ -8,7 +8,7 @@ app.use(cors());
 
 app.get("/teste", (req, res)=>{
   //res.sendFile(__dirname + '/index.html')
-  res.json("teste")
+  console.log("teste")
 })
 
 app.get("/tray/callback/", (req, res)=>{
