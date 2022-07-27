@@ -12,6 +12,12 @@ app.get("/teste", (req, res)=>{
   res.json("deu certo")
 })
 
+app.post("/estoque", (req, res)=>{
+  res.send(JSON.stringify(req.body));
+
+  console.log(req.body)
+});
+
 app.get("/tray/callback/", (req, res)=>{
     res.send(JSON.stringify(req.query));
 });
